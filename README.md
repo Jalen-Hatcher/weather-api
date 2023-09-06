@@ -3,8 +3,8 @@ A backend, RESTFul api which serves (hypothetical) weather data from a remote, M
 
 # Request Formatting
 All data communicated from some endpoint to the server is in JSON format. In this application, appropriate descriptions related to weather will be sent via the following schema: <br />
-{<br />
-  date: Date,<br />
+{__
+  date: Date,__
   city: String,<br />
   state: String,<br /> 
   country: String,<br />
