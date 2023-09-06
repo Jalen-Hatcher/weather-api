@@ -2,15 +2,15 @@
 A backend, RESTFul api which serves (hypothetical) weather data from a remote, MongoDb database. 
 
 # Request Formatting
-All data communicated from some endpoint to the server is in JSON format. In this application, appropriate descriptions related to weather will be sent via the following schema:
-{
-  date: Date,
-  city: String,
-  state: String,
-  country: String,
-  temperature: Number,
-  condition: String
-}
+All data communicated from some endpoint to the server is in JSON format. In this application, appropriate descriptions related to weather will be sent via the following schema: <br />
+{<br />
+  date: Date,<br />
+  city: String,<br />
+  state: String,<br /> 
+  country: String,<br />
+  temperature: Number,<br />
+  condition: String<br />
+}<br />
 Additionally, _id and __v attributes will be sent indicating entry id and version keys respectively for the database entries. Data can be requested via the HTTP route localhost:PORT/id, where id represents the _id attribute for a specific entry.
 
 # Note on .env
